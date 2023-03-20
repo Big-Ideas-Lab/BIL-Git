@@ -14,16 +14,20 @@ The instructions below were adopted from a standard feature branch workflow that
 ```
 git clone git@github.com:billchen0/BIL-Git.git
 ```
-3. Follow setup instruction on that specific project's README.
+3. Follow setup instructions on the project specific README.
+> **Note:** This typically includes setting up virtual environments and project specific packages. 
 
 ### Development
-1. (Situational) If your team member recently merged a pull request to the main branch, run `git pull` to make sure you have the latest update.
-2. Create your feature branch with `git branch <feature-name>` 
-3. Checkout to your feature branch with `git checkout <feature-name>`
-4. Once you finish a modular section of your code (an endpoint, a component, a view, a function, etc.), add your files to the staging area with `git add <filename>`
-5. Commit your changes with `git commit -m "<commit message>"`
-6. After every working session, push your code to GitLab from local with `git push`
-7. Once you are fully compelted with your feature branch, start a merge request in GitLab and select your reviewer. 
+1. Check your current branch with `git branch`.
+> **Note:** If this is your first time cloning the project, you should be on the main branch. 
+2. Check whether you are up to date with the remote branch with `git status`.
+3. Create your feature branch with `git branch <feature-name>` 
+4. Checkout to your feature branch with `git checkout <feature-name>`
+5. Once you finish a modular section of your code, add your files to the staging area with `git add <filename>`
+6. Commit your changes with `git commit -m "<commit message>"`
+7. After every working session, push your code to the remote repository with `git push`
+> **Note:** If this is your first time pushing your feature branch to the remote, you might need to setup the remote repository. Use `git push -u origin <feature-name>` instead. 
+8. Once you are fully completed with your feature branch, start a pull request and select a reviewer. 
 
 ### Rebasing
 Whenever a feature branch from your teammate was merged into main through a pull request, you will have to rebase the feature brances you are currently working on. 
@@ -37,13 +41,42 @@ Whenever a feature branch from your teammate was merged into main through a pull
 3. Run `git rebase --continue` to complete rebase (Note: Do NOT run `git commit` during rebasing).
 4. When rebase is completed, run `git push --force-with-lease` to push your local branch to remote. (Note: NEVER run `git push --force` or `git push --force-with-lease` on the main branch)
 
-### Merge Conflict
+## Best Practices
+
+### Feature Branch Naming
+
+Feature branch names should describe the main feature that you are adding and are relatively short (< 4 words). Words should be lower-case and separated by `-`. 
+
+> **Note:** If you find that you can't think of a feature name for your functionality, this is a sign that you might want to split your functionality into smaller, simpler features. 
+
+* Examples:
+    - `svm-evaluation`
+    - `peak-detection`
+    - `update-readme`
+    - `target-class-histogram`
+* Counter Examples:
+    - `Dr.R_Auth`
+    - `RandomForest`
+    - `my-entire-project`
+
+### Commiting
+
+Your should commit frequently. Typically a commit can happen after you finish a modular piece of code or after a working session. A good way to know when to commit is to see whether you can summarize what you did in a sentence. 
+
+Your commits should include a descriptive commit message (1-2 sentences) that helps to track what you have completed both for the team and for yourself. 
+
+* Examples:
+    * "Constructed the forward method for the baseline CNN model" 
+    * "Applied fourier transform on signal segments and stored the results"
+    * "Created a text field component and added basic styling"
+* Counter Examples:
+    * "pd.read_csv()"
+    * "Wrote some code yeah" 
+
+### General
+
+* You will almost never work directly on the main branch. Whenever you want to write/edit code, always start with creating a feature branch. 
+
+### Merge Conflicts
 
 The easiest way to deal with merge conflicts are not to create them. This means communicating well with your fellow teammates so that you are not editing the same scope of program in your respective feature branches. Resolving merge conflicts are typically very situational, so if you encounter a situation not described below, please contact us!
-
-1. If you encounter a merge conflict when merging code from remote to local, resolve the merge conflict manually in your IDE and run `git add <filename>` followed by `git commit -m "<commit-message>"` to register the resolved merge conflict. 
-2. If you encounter merge conflict when performing a merge request on the GitLab GUI, resolve it in the interactive window and continue with merge request as prompted. 
-
-If you are unsure of how code should be merged, please don't hesistate to contact the admin team to get suggestions. 
-
-## Best Practices
