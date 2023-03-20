@@ -36,7 +36,7 @@ git clone git@github.com:billchen0/BIL-Git.git
 Whenever a feature branch from your teammate was merged into main through a pull request, you will have to rebase the feature brances you are currently working on. 
 
 <p align="center">
-<img src="https://www.blog.duomly.com/wp-content/uploads/2020/05/Rebase.png" width="200px"></img>
+<img src="https://i.stack.imgur.com/VmHt6.png" width="200px"></img>
 </p>
 
 1. To perform rebase, run the following command on your feature branch `git pull --rebase origin main`.
