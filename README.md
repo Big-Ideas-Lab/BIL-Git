@@ -1,10 +1,13 @@
 # Big Ideas Lab Git Instruction and Best Practices
 
-## Introduction
-
 ## Feature Branch Workflow
 
 The instructions below were adopted from a standard feature branch workflow that you can read more about in this [article](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow). This workflow is adjusted to work with the typical team size and collaboration needs in the lab, but feel free to adapt a variation or another workflow (e.g. Centralized Workflow) if it fits your project better. 
+
+
+* **Main Branch** | Central branch that contains the latest bug-free version of your software.
+* **Feature Branches** | Contains the feature that you are currently working on.
+
 
 ### Clone the Project
 
@@ -73,9 +76,10 @@ Your commits should include a descriptive commit message (1-2 sentences) that he
     * "pd.read_csv()"
     * "Wrote some code yeah" 
 
-### General
+### Merging Your Features
 
-* You will almost never work directly on the main branch. Whenever you want to write/edit code, always start with creating a feature branch. 
+* Selected a reviewer in your pull request so that no unreviewed code gets merged into the main branch. 
+* Remember to send an announcement to your team after your feature branch is merged. This way your teammates will know when to rebase their branches. 
 
 ### Merge Conflicts
 
