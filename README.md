@@ -73,11 +73,15 @@ SSH is the secure and default way that we will access and write data to the GitH
 8. Once you are fully completed with your feature branch, start a pull request and select a reviewer. 
 
 ### Rebasing
-Whenever a feature branch from your teammate was merged into main through a pull request, you will have to rebase the feature brances you are currently working on. 
+Once in a while you might encounter the following scenario: 
 
+You are working on a feature branch (say `create-histogram`), while your teammate is working on another feature branch (say `fix-count-column`). Your teammate completed their feature, and merged their branch into `main`. Since your code depends on the fix that your teammate implemented, you want to bring your feature branch `create-histogram` up-to-date with `main` branch without having to directly merge into `main`. You will now need to complete a **rebase** as described in this section. 
+
+<div style="padding: 20px;">
 <p align="center">
-<img src="https://i.stack.imgur.com/VmHt6.png" width="400px"></img>
+<img src="https://i.stack.imgur.com/VmHt6.png" width="300px"></img>
 </p>
+</div>
 
 1. To perform rebase, run the following command on your feature branch `git pull --rebase origin main`.
 2. If there are merge conflicts, resolve them and then re-stage your files with `git add <filename>`.
