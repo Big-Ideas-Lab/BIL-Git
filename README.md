@@ -118,7 +118,7 @@ The following table provides recommended starting commit rate for common tasks. 
 | Editing Documentation | Every Paragraph or Table/Figure |
 | Resolving Bugs | After Every Error Resolution |
 | Application Development | At Completion of Every Component |
-| <p style="font-weight: bold; color: #012169;">Minimum Rate</p> | <p style="font-weight: bold; color: #012169;">1 Commit Every Hour</p> |
+| **Minimum Rate** | **1 Commit Every Hour** |
 
 
 Your commits should include a descriptive commit message (1-2 sentences) that helps to track what you have completed both for the team and for yourself. 
