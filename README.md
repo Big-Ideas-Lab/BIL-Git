@@ -106,7 +106,20 @@ Feature branch names should describe the main feature that you are adding and ar
     - `my-entire-project`
 
 ### Commiting
-Your should commit frequently. Typically a commit can happen after you finish a modular piece of code or after a working session. A good way to know when to commit is to see whether you can summarize what you did in a sentence. 
+The saying is to *"Commit Early and Commit Often"*. Although this seems intuitive, the commit rate varies a lot depending on the specific task. The easiest way to think about this is from the perspective of a code reviewer. Would commiting my current progress be valuable for someone trying to understand my thought process? Can I summarize my progress in a sentence that contributes to record keeping in the overall commit history? If the answer to those questions is yes, then you should commit. 
+
+>Committing too much isn't as harmful as commiting too little. So if you are unsure at first what your commit rate should be, start with more frequent commits and feedback from your team members should help you optimize that rate.
+
+The following table provides recommended starting commit rate for common tasks. For simplicity, we also set a minimum commit rate that you should follow:
+| Task | Recommended Commit Rate |
+| :-----: | :-----------------: |
+| Writing Simple Functions | At Completion of Function |
+| Writing Complex Functions | At Completion of Modularizable Sections |
+| Editing Documentation | Every Paragraph or Table/Figure |
+| Resolving Bugs | After Every Error Resolution |
+| Application Development | At Completion of Every Component |
+| <p style="font-weight: bold; color: #012169;">Minimum Rate</p> | <p style="font-weight: bold; color: #012169;">1 Commit Every Hour</p> |
+
 
 Your commits should include a descriptive commit message (1-2 sentences) that helps to track what you have completed both for the team and for yourself. 
 
