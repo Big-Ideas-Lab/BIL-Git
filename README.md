@@ -1,5 +1,15 @@
 # Big Ideas Lab Git Instruction and Best Practices
 
+## Table of Contents
+1. [General Workflow](#feature-branch-workflow)
+    1. [Setting up SSH key](#setting-up-ssh)
+    2. [Cloning the Project](#clone-the-project)
+    3. [During Development](#development)
+    4. [Rebasing and Teamwork](#rebasing)
+    5. [Best Practices](#best-practices)
+2. [Structuring your README](#structuring-readme)
+3. [Code Styling](#code-styling)
+
 ## Feature Branch Workflow
 
 The instructions below were adopted from a standard feature branch workflow that you can read more about in this [article](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow). This workflow is adjusted to work with the typical team size and collaboration needs in the lab, but feel free to adapt a variation or another workflow (e.g. Centralized Workflow) if it fits your project better. 
@@ -8,6 +18,7 @@ The instructions below were adopted from a standard feature branch workflow that
 * **Main Branch** | Central branch that contains the latest bug-free version of your software.
 * **Feature Branches** | Contains the feature that you are currently working on.
 
+### Setting up SSH
 
 ### Clone the Project
 
@@ -84,3 +95,7 @@ Your commits should include a descriptive commit message (1-2 sentences) that he
 ### Merge Conflicts
 
 The easiest way to deal with merge conflicts are not to create them. This means communicating well with your fellow teammates so that you are not editing the same scope of program in your respective feature branches. Resolving merge conflicts are typically very situational, so if you encounter a situation not described below, please contact us!
+
+## Structuring README
+
+## Code Styling
