@@ -18,11 +18,25 @@ There are many reasons why version control systems are critical to the success o
 ### For Yourself
 One major benefit of version control is to keep a working copy of your code at different times.
 
-**Scenario 1:** You have a working copy of your current codebase 👍. You decided to make some changes in hope to improve your results. After couple hours of work, you find yourself creating more problems then improvements. And what's even worse? You forgot how to get back to your working copy 🫠! If you commited your working copy previously, this will be no problem at all as you can just revert back to a previous version.
+**Scenario 1:** You have a working copy of your current codebase 👍. You decided to make some changes in hope to improve your results. After couple hours of work, you find yourself creating more problems then improvements. And what's even worse? You forgot how to get back to your working copy 🫠! If you commited your working copy previously, this will be no problem at all as you can just revert back to that commit.
+> Commiting frequently also allows you to have more confidence in trying new things, since you won't be worried about corrupting your current progress.
+
+
+**Scenario 2:** If someone were to ask you to explain your thought process behind a piece of code that you haven't seen in a while, it is likely that you also forgot what exactly happened 🤔. Frequent commits along with good commit messages can help you remember what you worked on. 
+
+**Scenario 3:** You might be asked about what you have worked on this week 🙀. Your commit history is the easiest way to show your track record for specific tasks. It is also a easy medium for the reviewer to digest. 
 
 ### For Your Team
 
+**Scenario 1:** Many times you need to view the commit history of a project in order to understand what tasks has been previouly completed, so that you don't reinventing the wheel. This is also applicable for understanding what has been attemped in specific tasks.
+
+**Scenario 2:** A well structured README can help bring your team on the same page. All members can agree on the usage of different scripts, the virtual envrionemnt, the variable naming convention, and more...
+
+**Scenario 3:** Using feature branches allows you to better share tasks across your team without worrying too much about dependencies and code conflicts. It also provides you a chance to review intermediate code and results before they are included in the final version.
+
 ### For the Community
+
+A well structure repository allow readers to easily understand your throught process and faciliatates reproducible research. 
 
 ## General Workflow
 The instructions below were adopted from a standard feature branch workflow that you can read more about in this [article](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow). This workflow is adjusted to work with the typical team size and collaboration needs in the lab, but feel free to adopt a variation if it fits your project goals better. 
@@ -42,9 +56,7 @@ SSH is the secure and default way that we will access and write data to the GitH
 1. On your local machine, navigate to the directory where you want to store the project. 
 > **Note:** Make sure that your parent directory does not have git initiated from another project. A good separation from your other tasks are recommended.
 2. In that directory, clone the repository with `git clone <project-url>`.
-```
-git clone git@github.com:billchen0/BIL-Git.git
-```
+
 3. Follow setup instructions on the project specific README.
 > **Note:** This typically includes setting up virtual environments and project specific packages. 
 
@@ -52,11 +64,11 @@ git clone git@github.com:billchen0/BIL-Git.git
 1. Check your current branch with `git branch`.
 > **Note:** If this is your first time cloning the project, you should be on the main branch. 
 2. Check whether you are up to date with the remote branch with `git status`.
-3. Create your feature branch with `git branch <feature-name>` 
-4. Checkout to your feature branch with `git checkout <feature-name>`
-5. Once you finish a modular section of your code, add your files to the staging area with `git add <filename>`
-6. Commit your changes with `git commit -m "<commit message>"`
-7. After every working session, push your code to the remote repository with `git push`
+3. Create your feature branch with `git branch <feature-name>`.
+4. Checkout to your feature branch with `git checkout <feature-name>`.
+5. Once you finish a modular section of your code, add your files to the staging area with `git add <filename>`.
+6. Commit your changes with `git commit -m "<commit message>"`.
+7. After every working session, push your code to the remote repository with `git push`.
 > **Note:** If this is your first time pushing your feature branch to the remote, you might need to setup the remote repository. Use `git push -u origin <feature-name>` instead. 
 8. Once you are fully completed with your feature branch, start a pull request and select a reviewer. 
 
