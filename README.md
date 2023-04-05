@@ -13,7 +13,13 @@
 4. [Code Styling](#code-styling)
 
 ## Why?
+There are many reasons why version control systems are critical to the success of most software and digital projects. As data scientists and researchers, version control systems such as Git serves similar purposes as a traditional lab notebook - **track experiments, enhance teamwork, improve reproducability, and safeguard our main intellectual output.** 
 
+### For Yourself
+
+### For Your Team
+
+### For the Community
 
 ## General Workflow
 The instructions below were adopted from a standard feature branch workflow that you can read more about in this [article](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow). This workflow is adjusted to work with the typical team size and collaboration needs in the lab, but feel free to adopt a variation if it fits your project goals better. 
