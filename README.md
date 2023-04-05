@@ -2,25 +2,27 @@
 
 
 ## Table of Contents
-1. [General Workflow](#general-workflow)
+1. [Why?](#why?)
+2. [General Workflow](#general-workflow)
     1. [Setting up SSH key](#setting-up-ssh)
     2. [Cloning the Project](#clone-the-project)
     3. [During Development](#development)
     4. [Rebasing and Teamwork](#rebasing)
     5. [Best Practices](#best-practices)
-2. [Structuring your README](#structuring-readme)
-3. [Code Styling](#code-styling)
+3. [Structuring your README](#structuring-readme)
+4. [Code Styling](#code-styling)
+
+## Why?
+
 
 ## General Workflow
+The instructions below were adopted from a standard feature branch workflow that you can read more about in this [article](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow). This workflow is adjusted to work with the typical team size and collaboration needs in the lab, but feel free to adopt a variation if it fits your project goals better. 
 
-The instructions below were adopted from a standard feature branch workflow that you can read more about in this [article](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow). This workflow is adjusted to work with the typical team size and collaboration needs in the lab, but feel free to adopt a variation or workflow (e.g. Centralized Workflow) if it fits your project goals better. 
-
-
+### Term Definitions
 * **Main Branch** | Central branch that contains the latest bug-free version of your software.
 * **Feature Branches** | Contains the feature that you are currently working on.
 
 ### Setting up SSH
-
 SSH is the secure and default way that we will access and write data to the GitHub repository. If you don't have a SSH key set up on your machine, you can find detailed instructions in the following pages:
 
 1. [Generating a SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
@@ -28,7 +30,6 @@ SSH is the secure and default way that we will access and write data to the GitH
 3. [Test your connection](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
 
 ### Clone the Project
-
 1. On your local machine, navigate to the directory where you want to store the project. 
 > **Note:** Make sure that your parent directory does not have git initiated from another project. A good separation from your other tasks are recommended.
 2. In that directory, clone the repository with `git clone <project-url>`.
@@ -65,7 +66,6 @@ Whenever a feature branch from your teammate was merged into main through a pull
 ## Best Practices
 
 ### Feature Branch Naming
-
 Feature branch names should describe the main feature that you are adding and are relatively short (< 4 words). Words should be lower-case and separated by `-`. 
 
 > **Note:** If you find that you can't think of a feature name for your functionality, this is a sign that you might want to split your functionality into smaller, simpler features. 
@@ -81,7 +81,6 @@ Feature branch names should describe the main feature that you are adding and ar
     - `my-entire-project`
 
 ### Commiting
-
 Your should commit frequently. Typically a commit can happen after you finish a modular piece of code or after a working session. A good way to know when to commit is to see whether you can summarize what you did in a sentence. 
 
 Your commits should include a descriptive commit message (1-2 sentences) that helps to track what you have completed both for the team and for yourself. 
@@ -95,12 +94,10 @@ Your commits should include a descriptive commit message (1-2 sentences) that he
     * "Wrote some code yeah" 
 
 ### Merging Your Features
-
 * Selected a reviewer in your pull request so that no unreviewed code gets merged into the main branch. 
 * Remember to send an announcement to your team after your feature branch is merged. This way your teammates will know when to rebase their branches. 
 
 ### Merge Conflicts
-
 The easiest way to deal with merge conflicts are not to create them. This means communicating well with your fellow teammates so that you are not editing the same scope of program in your respective feature branches. Resolving merge conflicts are typically very situational, so if you encounter a situation not described below, please contact us!
 
 ## Structuring README
