@@ -16,6 +16,9 @@
 There are many reasons why version control systems are critical to the success of most software and digital projects. As data scientists and researchers, version control systems such as Git serves similar purposes as a traditional lab notebook - **track experiments, enhance teamwork, improve reproducability, and safeguard our main intellectual output.** 
 
 ### For Yourself
+One major benefit of version control is to keep a working copy of your code at different times.
+
+**Scenario 1:** You have a working copy of your current codebase 👍. You decided to make some changes in hope to improve your results. After couple hours of work, you find yourself creating more problems then improvements. And what's even worse? You forgot how to get back to your working copy 🫠! If you commited your working copy previously, this will be no problem at all as you can just revert back to a previous version.
 
 ### For Your Team
 
