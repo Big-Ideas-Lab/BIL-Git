@@ -1,7 +1,8 @@
 # Big Ideas Lab Git Instruction and Best Practices
 
+
 ## Table of Contents
-1. [General Workflow](#feature-branch-workflow)
+1. [General Workflow](#general-workflow)
     1. [Setting up SSH key](#setting-up-ssh)
     2. [Cloning the Project](#clone-the-project)
     3. [During Development](#development)
@@ -10,15 +11,21 @@
 2. [Structuring your README](#structuring-readme)
 3. [Code Styling](#code-styling)
 
-## Feature Branch Workflow
+## General Workflow
 
-The instructions below were adopted from a standard feature branch workflow that you can read more about in this [article](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow). This workflow is adjusted to work with the typical team size and collaboration needs in the lab, but feel free to adapt a variation or another workflow (e.g. Centralized Workflow) if it fits your project better. 
+The instructions below were adopted from a standard feature branch workflow that you can read more about in this [article](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow). This workflow is adjusted to work with the typical team size and collaboration needs in the lab, but feel free to adopt a variation or workflow (e.g. Centralized Workflow) if it fits your project goals better. 
 
 
 * **Main Branch** | Central branch that contains the latest bug-free version of your software.
 * **Feature Branches** | Contains the feature that you are currently working on.
 
 ### Setting up SSH
+
+SSH is the secure and default way that we will access and write data to the GitHub repository. If you don't have a SSH key set up on your machine, you can find detailed instructions in the following pages:
+
+1. [Generating a SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+2. [Adding SSH key to GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+3. [Test your connection](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
 
 ### Clone the Project
 
