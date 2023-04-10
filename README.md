@@ -140,4 +140,11 @@ The easiest way to deal with merge conflicts are not to create them. This means 
 
 ## Structuring README
 
+The READMD.md file should be the project's central page where most guidelines and discriptions are listed. You project README should contain at least the following sections:
+* **Background/Purpose**: Describe the project. If available, you might also want to provide a figure describing the project's overall pipeline and directory strucutre of the repository.
+* **Resources**: Provides hyperlink to resources for the project. Some of those might be: project management tool (Notion, Trello), dataset, tutorials, API documentations, presentations, etc.
+* **Install**: Provide instructions on setting up the project. This typically includes the cloning of the project to the user's local machine, setting up virtual environment, and directions for downloading manual components such as the dataset.
+* **Usage**: Provide instructions on how to run the different scripts in your repository.
+* **Contribute**: The first bullet point should link to this document. Afterwards, describe additional contribution guidelines that is beyound the scope of this document (e.g. commit message style, variable naming, language and function format, etc.).
+
 ## Code Styling
