@@ -147,4 +147,4 @@ The READMD.md file should be the project's central page where most guidelines an
 * **Usage**: Provide instructions on how to run the different scripts in your repository.
 * **Contribute**: The first bullet point should link to this document. Afterwards, describe additional contribution guidelines that is beyound the scope of this document (e.g. commit message style, variable naming, language and function format, etc.).
 
-## Code Styling
+Here is a link to some [example READMEs](https://github.com/matiassingers/awesome-readme) our there that you can reference. And here is some additional [resources](https://www.makeareadme.com/) that you can reference if you are interested in other components of a README such as status badges or licenses. 
