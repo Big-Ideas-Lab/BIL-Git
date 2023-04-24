@@ -10,7 +10,6 @@
     4. [Rebasing and Teamwork](#rebasing)
     5. [Best Practices](#best-practices)
 3. [Structuring your README](#structuring-readme)
-4. [Code Styling](#code-styling)
 
 ## Why?
 There are many reasons why version control systems are critical to the success of most software and digital projects. As data scientists and researchers, version control systems such as Git serves similar purposes as a traditional lab notebook - **track experiments, enhance teamwork, improve reproducability, and safeguard our main intellectual output.** 
