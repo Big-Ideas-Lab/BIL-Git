@@ -1,4 +1,4 @@
-# Big Ideas Lab Git Instruction and Best Practices
+# BIG IDEAs Lab Git Instruction and Best Practices
 
 
 ## Table of Contents
